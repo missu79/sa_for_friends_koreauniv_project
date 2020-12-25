@@ -30,6 +30,16 @@ friends_test.json <br>
 - en_data.csv <br>
 출처 : https://www.kaggle.com/c/english-sa-competition-dfe610/data
 
+- friends_final.csv <br>
+코드를 돌려서 나온 최종값 <br>
+이것을 캐글 클래스 경진대회에 올려서 평가함
+
+## **평가**
+
+- 캐글 클래스 경진대회에 올린 결과
+
+
+
 ## **패키지**
 
 - torch
