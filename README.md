@@ -16,6 +16,10 @@ sentimental analysis for 'friends'
 9. 학습 및 검증
 10. 최종 제출데이타에 대한 예측 수행
 
+## **실행 방법**
+
+- 코드과정마다 텍스트로 설명이 되어 있으니, 코드 파일을 열어보시기 바랍니다.
+
 ## **데이터**
 
 - friends_train.json <br>
@@ -23,10 +27,23 @@ friends_dev.json <br>
 friends_test.json <br>
 출처 : http://doraemon.iis.sinica.edu.tw/emotionlines/index.html
 
-- en_data.csv
+- en_data.csv <br>
 출처 : https://www.kaggle.com/c/english-sa-competition-dfe610/data
 
 ## **패키지**
 
-- 
-- 
+- torch
+- pandas
+- numpy
+- RobertaTokenizer 등
+
+## **팁**
+
+1. 데이터 양이 충분치 않다고 생각될 때는 가용가능한 모든 데이터를 사용하면 정확도 향상에 도움이 될 수도 있음
+실제로 train data만을 가지고 돌렸을 때 보다 성능이 좋아짐
+2. Large 모델이 Base 모델보다 시간은 더 걸리지만, 정확도 향상에 도움이 됨
+마찬가지로 대소문자 구분하지 않는 것(소문자화 = true)보다 구분하는 것(flase)가 약간이나마 향상 됨
+3. 배치사이즈를 크게 하면 속도향상에는 도움이 되나, 메모리가 좋아야 가능함. 256으로 돌려보니, runtime error가 발생하였음. 안전하게 32로 세팅
+4. 모델링 시 최초에는 BERT-Large로 진행해봤으나, 정확도 향상에 한계가 존재
+RoBERTa 모델을 발견하고 돌리니, 정확도 크게 향상됨
+5. 파라미터 조정(learning rate, epoch, batch size 등) 조정하여 여러번 돌려볼 필요가 있음
