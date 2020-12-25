@@ -41,6 +41,12 @@ friends_test.json <br>
 - numpy
 - RobertaTokenizer 등
 
+## **전처리 및 모델링**
+
+ - RoBERTa 사용
+ - optimizer는 AdamW 사용
+ - parameter 
+ 
 ## **평가**
 
 - 캐글 클래스 경진대회에 올린 결과 <br>
