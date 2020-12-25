@@ -1,6 +1,9 @@
 ## 미드 프렌즈 감정분석기 개발(고려대 디지털금융공학석사 과정 기말 프로젝트)
 sentimental analysis for 'friends'
 
+## **참고한 소스**
+
+- https://github.com/ailohc/friends-classification
 
 ## **분석 순서**
 
